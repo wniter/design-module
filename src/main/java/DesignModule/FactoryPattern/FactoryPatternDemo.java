@@ -1,4 +1,4 @@
-package FactoryPattern;
+package DesignModule.FactoryPattern;
 
 public class FactoryPatternDemo {
 

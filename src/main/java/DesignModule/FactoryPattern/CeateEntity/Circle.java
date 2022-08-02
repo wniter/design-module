@@ -1,6 +1,6 @@
-package FactoryPattern.CeateEntity;
+package DesignModule.FactoryPattern.CeateEntity;
 
-import FactoryPattern.Shape;
+import DesignModule.FactoryPattern.Shape;
 
 public class Circle implements Shape {
 

@@ -1,6 +1,6 @@
-package AbstractFactoryPattern.CreateEntity;
+package DesignModule.FactoryPattern.CeateEntity;
 
-import AbstractFactoryPattern.Shape;
+import DesignModule.FactoryPattern.Shape;
 
 public class Rectangle implements Shape {
 

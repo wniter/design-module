@@ -1,6 +1,6 @@
-package FactoryPattern;
+package DesignModule.FactoryPattern;
 
-import FactoryPattern.CeateEntity.*;
+import DesignModule.FactoryPattern.CeateEntity.*;
 
 public class ShapeFactory {
 
