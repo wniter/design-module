@@ -1,6 +1,12 @@
 package DesignModule.FactoryPattern;
 
+import DesignModule.FactoryPattern.CeateEntity.Circle;
+
+/**
+ * 工厂模式
+ */
 public class FactoryPatternDemo {
+    private static Shape shape =null;
 
     public static void main(String[] args) {
         ShapeFactory shapeFactory = new ShapeFactory();
@@ -22,5 +28,12 @@ public class FactoryPatternDemo {
 
         //调用 Square 的 draw 方法
         shape3.draw();
+        System.out.println("-------------------------------");
+        //这个接口是谁的，对谁
+        shape.draw();
+        /**
+         * Exception in thread "main" java.lang.NullPointerException
+         * 	at DesignModule.FactoryPattern.FactoryPatternDemo.main(FactoryPatternDemo.java:30)
+         */
     }
 }
