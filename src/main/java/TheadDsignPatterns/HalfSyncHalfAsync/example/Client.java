@@ -19,8 +19,9 @@ import java.util.TimerTask;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
-import io.github.viscent.mtpattern.ch5.tpt.example.AlarmType;
-import io.github.viscent.util.Debug;
+
+import TheadDsignPatterns.TwoPhaseTermination.example.AlarmType;
+import util.Debug;
 
 public class Client {
 

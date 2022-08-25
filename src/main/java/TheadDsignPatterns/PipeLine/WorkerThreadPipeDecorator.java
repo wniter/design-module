@@ -13,14 +13,16 @@ http://www.broadview.com.cn/38245
 
 package TheadDsignPatterns.PipeLine;
 
+import TheadDsignPatterns.TwoPhaseTermination.AbstractTerminatableThread;
+import TheadDsignPatterns.TwoPhaseTermination.TerminationToken;
+
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.TimeUnit;
 
-import io.github.viscent.mtpattern.ch5.tpt.AbstractTerminatableThread;
-import io.github.viscent.mtpattern.ch5.tpt.TerminationToken;
+
 
 /**
  * 基于工作者线程的Pipe实现类。 提交到该Pipe的任务由指定个数的工作者线程共同处理。 该类使用了Two-phase

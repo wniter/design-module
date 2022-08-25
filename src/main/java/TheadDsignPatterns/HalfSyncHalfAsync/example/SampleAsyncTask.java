@@ -17,8 +17,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.Future;
 
-import io.github.viscent.mtpattern.ch14.hsha.AsyncTask;
-import io.github.viscent.util.Debug;
+
+import TheadDsignPatterns.HalfSyncHalfAsync.AsyncTask;
+import util.Debug;
 
 public class SampleAsyncTask {
 

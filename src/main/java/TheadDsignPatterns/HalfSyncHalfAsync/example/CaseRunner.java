@@ -13,7 +13,8 @@ http://www.broadview.com.cn/38245
 
 package TheadDsignPatterns.HalfSyncHalfAsync.example;
 
-import io.github.viscent.mtpattern.ch5.tpt.example.AlarmType;
+
+import TheadDsignPatterns.TwoPhaseTermination.example.AlarmType;
 
 public class CaseRunner {
 

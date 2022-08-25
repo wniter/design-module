@@ -20,8 +20,8 @@ import java.util.Set;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
-import io.github.viscent.util.Debug;
-import io.github.viscent.util.Tools;
+import util.Debug;
+import util.Tools;
 
 public class DataSyncTask implements Runnable {
     private final Map<String, String> taskParameters;

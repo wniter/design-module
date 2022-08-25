@@ -13,14 +13,16 @@ http://www.broadview.com.cn/38245
 
 package TheadDsignPatterns.ProducerConsumer.exmaple;
 
+import TheadDsignPatterns.ProducerConsumer.WorkStealingChannel;
+import TheadDsignPatterns.ProducerConsumer.WorkStealingEnabledChannel;
+import TheadDsignPatterns.TwoPhaseTermination.AbstractTerminatableThread;
+import TheadDsignPatterns.TwoPhaseTermination.TerminationToken;
+
 import java.util.Random;
 import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.LinkedBlockingDeque;
 
-import io.github.viscent.mtpattern.ch5.tpt.AbstractTerminatableThread;
-import io.github.viscent.mtpattern.ch5.tpt.TerminationToken;
-import io.github.viscent.mtpattern.ch7.pc.WorkStealingChannel;
-import io.github.viscent.mtpattern.ch7.pc.WorkStealingEnabledChannel;
+
 
 /**
  * 工作窃取算法示例。 该类使用Two-phase Termination模式（参见第5章）。

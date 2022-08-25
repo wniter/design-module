@@ -13,8 +13,8 @@ http://www.broadview.com.cn/38245
 
 package TheadDsignPatterns.HalfSyncHalfAsync.example;
 
-import io.github.viscent.mtpattern.ch5.tpt.example.AlarmType;
-import io.github.viscent.util.Debug;
+import TheadDsignPatterns.TwoPhaseTermination.example.AlarmType;
+import util.Debug;
 
 /**
  * 告警功能入口类。 模式角色：HalfSync/HalfAsync.AsyncTask

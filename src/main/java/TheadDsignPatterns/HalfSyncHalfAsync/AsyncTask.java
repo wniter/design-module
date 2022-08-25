@@ -13,6 +13,8 @@ http://www.broadview.com.cn/38245
 
 package TheadDsignPatterns.HalfSyncHalfAsync;
 
+import TheadDsignPatterns.ThreadPool.example.ReEnqueueRejectedExecutionHandler;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
@@ -24,7 +26,7 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import io.github.viscent.mtpattern.ch9.threadpool.example.ReEnqueueRejectedExecutionHandler;
+
 
 /**
  * Half-sync/Half-async模式的可复用实现。

@@ -13,10 +13,10 @@ http://www.broadview.com.cn/38245
 
 package TheadDsignPatterns.HalfSyncHalfAsync.example;
 
-import io.github.viscent.mtpattern.ch5.tpt.example.AlarmType;
 
 import java.sql.Connection;
 
+import TheadDsignPatterns.TwoPhaseTermination.example.AlarmType;
 import org.apache.log4j.Logger;
 
 public class SampleAlarmClient {

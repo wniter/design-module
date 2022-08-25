@@ -24,7 +24,7 @@ import java.text.DecimalFormat;
 import java.util.Properties;
 import java.util.Random;
 
-import io.github.viscent.util.Tools;
+import util.Tools;
 
 /**
  * 本章实战案例运行时所需的数据库记录生成器。

@@ -13,7 +13,7 @@ http://www.broadview.com.cn/38245
 
 package TheadDsignPatterns.ActiveObject.example;
 
-import io.github.viscent.util.Debug;
+import util.Debug;
 
 public class SampleActiveObjectImpl {
 

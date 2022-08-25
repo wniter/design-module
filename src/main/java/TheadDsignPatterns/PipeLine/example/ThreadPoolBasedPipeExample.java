@@ -18,12 +18,13 @@ import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import io.github.viscent.mtpattern.ch13.pipeline.AbstractPipe;
-import io.github.viscent.mtpattern.ch13.pipeline.Pipe;
-import io.github.viscent.mtpattern.ch13.pipeline.PipeException;
-import io.github.viscent.mtpattern.ch13.pipeline.SimplePipeline;
-import io.github.viscent.util.Debug;
-import io.github.viscent.util.Tools;
+
+import TheadDsignPatterns.PipeLine.AbstractPipe;
+import TheadDsignPatterns.PipeLine.Pipe;
+import TheadDsignPatterns.PipeLine.PipeException;
+import TheadDsignPatterns.PipeLine.SimplePipeline;
+import util.Debug;
+import util.Tools;
 
 public class ThreadPoolBasedPipeExample {
 

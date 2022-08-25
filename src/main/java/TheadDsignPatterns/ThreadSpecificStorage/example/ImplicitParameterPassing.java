@@ -15,7 +15,7 @@ package TheadDsignPatterns.ThreadSpecificStorage.example;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import io.github.viscent.util.Debug;
+import util.Debug;
 
 public class ImplicitParameterPassing {
 

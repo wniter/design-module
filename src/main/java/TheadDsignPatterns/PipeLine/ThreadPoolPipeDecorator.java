@@ -110,7 +110,7 @@ public class ThreadPoolPipeDecorator<IN, OUT> implements Pipe<IN, OUT> {
 	 *
 	 */
 	private static class TerminationToken extends
-	    io.github.viscent.mtpattern.ch5.tpt.TerminationToken {
+	    TheadDsignPatterns.TwoPhaseTermination.TerminationToken {
 		private final static ConcurrentMap<ExecutorService, TerminationToken> 
 					INSTANCES_MAP 
 					= new ConcurrentHashMap<ExecutorService, TerminationToken>();

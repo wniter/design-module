@@ -19,7 +19,7 @@ import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import io.github.viscent.util.Debug;
+import util.Debug;
 
 public class ThreadPoolDeadLockAvoidance {
     private final ThreadPoolExecutor threadPool =

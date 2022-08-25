@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import io.github.viscent.util.Debug;
+import util.Debug;
 
 public class MMSDeliveryServlet extends HttpServlet {
 

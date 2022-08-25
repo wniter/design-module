@@ -13,14 +13,15 @@ http://www.broadview.com.cn/38245
 
 package TheadDsignPatterns.HalfSyncHalfAsync.example;
 
+import TheadDsignPatterns.TwoPhaseTermination.AbstractTerminatableThread;
+import TheadDsignPatterns.TwoPhaseTermination.example.AlarmType;
+
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import io.github.viscent.mtpattern.ch5.tpt.AbstractTerminatableThread;
-import io.github.viscent.mtpattern.ch5.tpt.example.AlarmType;
 
 /*
  * 告警发送线程。

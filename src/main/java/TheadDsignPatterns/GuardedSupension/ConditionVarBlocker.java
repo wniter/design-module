@@ -18,7 +18,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import io.github.viscent.util.Debug;
+import util.Debug;
 
 public class ConditionVarBlocker implements Blocker {
     private final Lock lock;

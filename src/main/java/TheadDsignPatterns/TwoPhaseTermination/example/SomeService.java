@@ -13,11 +13,13 @@ http://www.broadview.com.cn/38245
 
 package TheadDsignPatterns.TwoPhaseTermination.example;
 
+import TheadDsignPatterns.TwoPhaseTermination.AbstractTerminatableThread;
+import util.Tools;
+
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
-import io.github.viscent.mtpattern.ch5.tpt.AbstractTerminatableThread;
-import io.github.viscent.util.Tools;
+
 
 public class SomeService {
     private final BlockingQueue<String> queue =

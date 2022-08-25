@@ -13,6 +13,11 @@ http://www.broadview.com.cn/38245
 
 package TheadDsignPatterns.ProducerConsumer.exmaple;
 
+import TheadDsignPatterns.ProducerConsumer.BlockingQueueChannel;
+import TheadDsignPatterns.ProducerConsumer.Channel;
+import TheadDsignPatterns.TwoPhaseTermination.AbstractTerminatableThread;
+import util.Tools;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -22,10 +27,6 @@ import java.nio.file.StandardCopyOption;
 import java.text.Normalizer;
 import java.util.concurrent.ArrayBlockingQueue;
 
-import io.github.viscent.mtpattern.ch5.tpt.AbstractTerminatableThread;
-import io.github.viscent.mtpattern.ch7.pc.BlockingQueueChannel;
-import io.github.viscent.mtpattern.ch7.pc.Channel;
-import io.github.viscent.util.Tools;
 
 //模式角色：Producer-Consumer.Producer
 public class AttachmentProcessor {

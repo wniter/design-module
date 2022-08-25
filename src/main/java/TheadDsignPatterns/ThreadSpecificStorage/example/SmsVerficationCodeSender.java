@@ -20,7 +20,7 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import io.github.viscent.util.Debug;
+import util.Debug;
 
 public class SmsVerficationCodeSender {
     private static final ExecutorService EXECUTOR =

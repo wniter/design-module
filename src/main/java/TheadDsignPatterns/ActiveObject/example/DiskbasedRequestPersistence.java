@@ -28,7 +28,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import org.apache.log4j.Logger;
 
-import io.github.viscent.util.Tools;
+import util.Tools;
 
 public class DiskbasedRequestPersistence implements RequestPersistence {
     // 负责缓存文件的存储管理

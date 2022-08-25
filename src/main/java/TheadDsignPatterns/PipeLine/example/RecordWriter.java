@@ -27,8 +27,8 @@ import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
 
-import io.github.viscent.util.Debug;
-import io.github.viscent.util.Tools;
+import util.Debug;
+import util.Tools;
 
 public class RecordWriter {
 

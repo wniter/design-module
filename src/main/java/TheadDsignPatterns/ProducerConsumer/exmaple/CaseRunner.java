@@ -17,7 +17,7 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import io.github.viscent.util.Debug;
+import util.Debug;
 
 public class CaseRunner {
 
