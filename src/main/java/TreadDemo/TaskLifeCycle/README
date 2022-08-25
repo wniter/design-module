@@ -1,0 +1,5 @@
+监控任务的生命周期
+    Observable使用枚举定义生命周期，并声明接口public Cycle getCycle()获取生命周期
+    Task 我们要运行的核心任务接口
+    TaskLifecycle 生命周期函数，来执行我们特定生命周期所需要执行的操作,事件源的调用者
+    ObservableThread 一个完整的 带有监控的线程，事件源的发起者

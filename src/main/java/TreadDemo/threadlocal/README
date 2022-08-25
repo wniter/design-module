@@ -1,0 +1,35 @@
+7 线程上下文
+  如spring的context
+
+ThreadLocal的源码详解
+首先明确几个概念
+    Thread 线程
+    ThreadLocal     通过这个类来维护我们的threadLocalMap 这个数据结构
+    ThreadLocalMap 这是和我们线程相关联的数据结构
+    Entry ThreadLocalMap 中真正存储的数据结构,key 为threadlocal的引用，值为value
+
+    public void set(T value) 方法源码
+        1) 获取当前线程   Thread t = Thread.currentThread();
+        2) 根据当前线程获取与之相关联的ThreadLocalMap数据结构 ThreadLocalMap map = getMap(t);
+        3) 如果map为null 则进入第4步，否则进入第5步  if (map != null)
+        4) 创建一个ThreadLocalMap 用当前的ThreadLocal实例作为key 将要存放的数据作为value，对应到ThreadLocalMap
+            中则是创建了一个Entry
+            createMap(t, value);
+                 t.threadLocals = new ThreadLocalMap(this, firstValue);
+                     ThreadLocalMap(ThreadLocal<?> firstKey, Object firstValue) {
+                                table = new Entry[INITIAL_CAPACITY];
+                                int i = firstKey.threadLocalHashCode & (INITIAL_CAPACITY - 1);
+                                table[i] = new Entry(firstKey, firstValue);
+                                size = 1;
+                                setThreshold(INITIAL_CAPACITY);
+                            }
+        5) 在map的set方法中遍历整个map的Entry，如果发现ThreadLocal相同，则使用新的数据替换即可，set过程结束
+        6) 在遍历map的entry过程中，如果发现有Entry的Key值为null，则直接将其逐出并使用新的数据占用被逐出数据的
+            位置（防止内存泄漏）
+        7) 创建新的Entry，使用ThreadLocal作为Key将要存放的数据作为Value
+        8) 最后在根据ThreadLocalMap的当前数据元素的大小和阈值做比较，再次进行key为null的数据项的清理工作
+
+    public T get()方法类似，简单说就是根据当前线程获取threadLocalMap对象,使用该对象找到对应threadlocal变量的存储
+    位置，获取entry,然后在获取value。
+
+    ......未完待续

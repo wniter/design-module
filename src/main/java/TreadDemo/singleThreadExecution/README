@@ -1,0 +1,3 @@
+Single Thread execution
+        引入的问题：访问公共资源时，所引起的并发问题，以及解决并发问题使用synchronized所导致的死锁问题
+        并举了连个问题，吃饭问题，并提出了两个解决思路：使用TableWarePair 封装需要获取的资源，作为锁的对象.
