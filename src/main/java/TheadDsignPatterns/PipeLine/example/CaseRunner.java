@@ -64,7 +64,7 @@ public class CaseRunner {
             this.gis = new GZIPInputStream(
                     new BufferedInputStream(CaseRunner.class
                             .getResourceAsStream(
-                                    "/data/ch13/subscriptions.csv.gz")));
+                                    "/data/Pipeline/subscriptions.csv.gz")));
             this.scanner = new Scanner(gis, "UTF-8");
         }
 

@@ -37,7 +37,7 @@ public class CaseRunner {
         // 解压缩程序所需的测试数据
         InputStream dataIn =
                 CaseRunner.class.getClassLoader()
-                        .getResourceAsStream("data/ch12/ifl.zip");
+                        .getResourceAsStream("data/MasterSlave/ifl.zip");
         Tools.unzip(dataIn, strLogFileBaseDir);
 
         final Pattern pattern;
